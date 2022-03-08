@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!--Cabeçalho-->
+<html lang="pt-br">
+    <head>
+        <meta charset ="utf-8"/>
+        <title>PicPro</title>
+    </head>
+    <body>
+          
+            <header class ="cabecalho">
+                <div class ='container'>
+                    <figure class="cabecalho__logopicpro">
+                        <img src ="./assets/img/logo-picpro.png" alt ="Logo PicPro"/>
+                    </figure>
+                        <figure class="cabecalho__logokenzie">
+                        <img src ="./assets/img/logo-kenzie.png" alt ="Logo Kenzie"/>
+                    </figure>
+                </div>
+            </header>
+        
+
+        <!--Conteudo Inicial da página-->
+       <main>
+           <section class=" SecaoDetalesConta">
+               <div class="SecaoDetalesConta__sobreusuario">
+                   <img src ="./assets/img/usuario.png" alt ="Ícone do Usuário"/>
+                   <p>Olá,<strong>@TácioSantana</strong></p>
+               </div>
+               <div class="SecaoDetalesConta__sobresaldo">
+                   <p>Saldo PicPay<strong>R$ 100.000,00 </strong></p>
+                   <button>Extrato</button>
+               </div>
+               <ul class="SecaoDetalesConta__opcoesTrasacoes">
+                   <li class="SecaoDetalesConta__itenTransacao">
+                       <img src="./assets/img/qrcode.png" alt="Icone QR Code"/>
+                       <p>QR Code</p>
+                   </li>
+                   <li class="SecaoDetalesConta__itenTransacao">
+                       <img src="./assets/img/pix.png" alt="Icone Pix"/>
+                       <p>Pix</p>
+                   </li>
+                   <li class="SecaoDetalesConta__itenTransacao">
+                        <img src="./assets/img/codigo.png" alt="Icone Boleto"/>
+                        <p>Pagar Boleto</p>
+                    </li>
+                    <li class="SecaoDetalesConta__itenTransacao">
+                        <img src="./assets/img/cobrar-icon.png" alt="Icone Cobrar"/>
+                        <p>Cobrar</p>
+                    </li>
+                    
+               </ul>
+           </section>
+           <!--Conteudo Dinamico-->
+           <section class="secaoTransacao">
+               <!--Divisão geral-->
+               <div class = "container">
+                   <!--Divisão seleção Pagamento-->
+                   <div class="secaoTransacao__aviso">
+                        <p>Selecione a forma de pagamento</p>
+                        <img src="./assets/img/banner.png" alt="Banner PicPay"/>
+                   </div>
+                   <!--Divisão QRCode-->
+                   <div class="secaoTransacao__qrcode">
+                        <img src="./assets/img/qrcode-imagem.png" alt="Img qrcode"/>
+                        <p>@TacioSantana</p>
+                        <button>Cobre um amigo</button>
+                        <strong>Compartilhar meu código</strong>
+                   </div>
+                   <!--Divisão Pix-->
+                   <div class="secaoTransacao__pix">
+                       <img src="./assets/img/pix-logo.png" alt="Logo Pix"/>
+                       <div class="secaoTransacao__boxopcao">
+                            <img src="./assets/img/pix1.png" alt="OpcaoPix1"/>
+                            <p>Texto1</p>
+                       </div>
+                       <div class="secaoTransacao__boxopcao">
+                           <img src="./assets/img/pix2.png" alt="opcaopix2"/>
+                           <p>Texto2</p>
+                       </div>
+
+                   </div>
+                   <!--Divisão Boleto-->
+                   <div class="secaoTransacao__boleto">
+                       <img src="./assets/img/boleto.png" alt="Imagem Boleto"/>
+                       <h2>Pagar com código de barras</h2>
+                       <p>Texto</p>
+                       <input type="text" placeholder="Insira o código de barras">
+
+                   </div>
+                   <!--Divisão Cobrar-->
+                   <div class="secaoTransacao__cobrar">
+                       <img src="./assets/img/cobrar.png" alt="Icone Cobrar"/>
+                       <h2>Cobrar</h2>
+                       <p>Divida a conta com os amigos de fomar fácil!</p>
+                       <div class="secaoTransacao__boxopcao">
+                            <img src="./assets/img/picpay-icon.png" alt="iconpicpay"/>
+                            <p><strong>Amigos do picPay</strong>Divida e acompanhe um gasto com pessoas por aqui!</p>
+                    </div>
+                   </div>
+               </div>
+           </section>
+           <!--Rodapé imagens, links e texto-->
+           <footer class="rodape">
+               <ul class="rodape__menu">
+                   <li class="rodape__menuitem">
+                       <a href="#"></a>
+                       <img src="./assets/img/inicio.png" alt =" Icone Início" />
+                       <p>Início</p>
+                   </li>
+                   <li class="rodape__menuitem">
+                        <a href="#"></a>
+                        <img src="./assets/img/carteira-icon.png" alt =" Icone Carteira" />
+                        <p>Carteira</p>
+                   </li>
+                   <li class="rodape__menuitem">
+                        <a href="#"></a>
+                        <img src="./assets/img/pagar.png" alt =" Icone Pagar" />
+                        <p>Pagar</p>
+                    </li>
+                    <li class="rodape__menuitem">
+                        <a href="#"></a>
+                        <img src="./assets/img/notificacao.png" alt =" Icone notificação" />
+                        <p>Notificações</p>
+                    </li>
+                    <li class="rodape__menuitem">
+                        <a href="#"></a>
+                        <img src="./assets/img/bolsa.png" alt =" Icone Store" />
+                        <p>Store</p>
+                    </li>   
+               </ul>
+           </footer>
+       </main>
+    </body>
+</html>
