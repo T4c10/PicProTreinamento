@@ -2,14 +2,14 @@ body {
     background-color: #228664;
     font-family: "Poppins", sans-serif;
 }
-.cotainer{
+.container{
     width: 100%;
-    max-width: 80%;
+    max-width: 60%;
     margin: 0 150px;
 }
 
 .cabecalho{
-    padding: 20 px 0;
+    padding: 30px 0;
     border-bottom: 1px solid rgba(255,255,255,0.4);
 }
 
@@ -23,12 +23,13 @@ body {
     max-width: 140px;
 }
 
-.cabecalho.cabecalho__logoPicpro{
-    border-right: 1px solid #fff;
+.cabecalho .cabecalho__logoPicpro{
+    border-right: 1px solid rgba(255,255,255,0.4) ;
     margin-right: 15px;
+    margin-left: 80px;
 }
 
-.secaoDetalhesConta {
+.secaoDetalhesConta{
     color: #fff;
     padding: 60px 0 30px;
 }
@@ -64,7 +65,7 @@ body {
     font-weight: bold;
 }
 
-.secaoDetalhesConta_sobreSaldo{
+.secaoDetalhesConta__sobreSaldo{
     border-top: 1px solid #000;
     display: flex;
     justify-content: space-between;
@@ -81,10 +82,11 @@ body {
 }
 
 .secaoDetalhesConta__sobreSaldo--valor p{
+    display: block;
     font-weight: 600;
 }
 
-.secaoDetalhesConta__sobreSaldo--valor img{
+.secaoDetalhesConta__sobreSaldo--valor img {
     display: block;
     height: 18px;
     width: 30px;
@@ -101,7 +103,7 @@ body {
     cursor: pointer;
 }
 
-.secaoDetalhesConta__opcoesTransacoes{
+.secaoDetalhesConta__opcoesTransacoes {
     display: flex;
     justify-content: space-between;
 }
@@ -115,7 +117,7 @@ body {
     cursor: pointer;
 }
 
-.secaoDetalhesConta__opcoesTransacoes li img{
+.secaoDetalhesConta__opcoesTransacoes li img {
     width: 100;
     max-width: 40px;
 }
@@ -128,7 +130,7 @@ body {
     width: 80px;
 }
 
-.secaoTransacao{
+.secaoTransacao {
     background-color: #fff;
     border-radius: 20px 20px 0 0;
     border-bottom: 15px solid #f0f0f0;
@@ -136,11 +138,11 @@ body {
     min-height: 450px;
 }
 
-.secaoTransacao .container div{
-    display: none;
-}
+/*.secaoTransacao .container div  {
+    display: none ;
+}*/
 
-.secaoTransacao .container .mostra{
+.secaoTransacao .container  {
     display: block;
 }
 
@@ -171,9 +173,137 @@ body {
     margin: 20px 0;
 }
 
-.secaoTransacao__qrCode button{
+.secaoTransacao__qrCode button {
     background-color: #4a8864;
     border: none;
-    color: #fff;
+    color: #fff; 
+    font-size: 18px;
+    font-weight: bold;
+    border-radius:10px ;
+    margin: 50px 0 20px;
+    padding: 15px 150px;
+}
+
+.secaoTransacao__qrCode a {
+    display: block;
+    color: #000;
+    font-weight: bold;
+}
+
+.secaoTransacao__pix {
+    width: 100%;
+    max-width: 150px;
+}
+
+.secaoTransacao__boxOpcao {
+    display: flex;
+    align-items: center;
+    border: 1px solid #d2d2d2;
+    max-width: 500px;
+    width: 500px;
+    padding: 14px 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.15);
+    margin: 20px 0;
+}
+
+.secaoTransacao__boxOpcao img {
+    width: 100%;
+    max-width: 80px;
+    margin-right: 10px;
+}
+
+.secaoTransacao__boxOpcao p {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+/*.secaoTransacao__boleto{
+
+}
+*/
+.secaoTransacao__boleto img{
+    width: 100%;
+    max-width: 80px;
+}
+
+.secaoTransacao__boleto h2{
+    font-weight: bold;
+    font-size: 20px;
+}
+.secaoTransacao__boleto p {
+    font-size: 15px;
+    max-width: 500px;
+    margin: 20px 0;
+}
+
+.secaoTransacao__boleto input{
+    width: 100%;
+    max-width: 500px;
+    background-color: #f4f4f4;
+    font-size: 13px;
+    height: 50px;
+    padding: 0 80px;
+    border-radius: 8px;
+    border: 1px solid #d2d2d2;
+    color: #000;
+}
+
+/*.secaoTransacao__cobrar{} */
+
+.secaoTransacao__cobrar img{
+    width: 100%;
+    max-width: 80px;
+}
+
+.secaoTransacao__cobrar h2 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.secaoTransacao__cobrar p {
+    font-size: 15px;
+    max-width: 500px;
+    margin: 20px 0;
+}
+
+.secaoTransacao__cobrar .secaoTransacao__boxOpcao p {
+    margin-left: 10px;
+}
+
+.rodape{
+    background-color: white;
+}
+
+.rodape__menuPrincipal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rodape__menuPrincipal li {
+    text-align: center;
+}
+
+.rodape__menuPrincipal li a {
+    color: #000;
+    text-decoration: none;
+}
+
+.rodape__menuPrincipal li a img {
+    width: 100%;
+    max-width: 40px;
     
+}
+
+.rodape__menuPrincipal li a p {
+    margin-top: 20px;  
+}
+
+.rodape__menuItem--pagar {
+    transform: translateY(-35px);
+}
+
+.rodape__menuPrincipal .rodape__menuItem--pagar  a img {
+    max-width: 80px;
 }
